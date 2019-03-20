@@ -1,0 +1,23 @@
+{
+    "name": "focalstrategy/view_objects",
+    "description": "Decouples data from the view",
+    "authors": [
+        {
+            "name": "Shane Glee",
+            "email": "shane@focalstrategy.com"
+        }
+    ],
+    "require": {
+        "focalstrategy/filter":"^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "FocalStrategy\\ViewObjects\\": "src"
+        }
+    },
+    "config": {
+        "github-oauth": {
+            "github.com": "af8e077799a15b74a85ebe9c126db26b87fe69df"
+        }
+    }
+}
