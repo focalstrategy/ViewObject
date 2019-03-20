@@ -101,7 +101,7 @@ class Transformer
                         $cl = $this->handleNested($itm, $cl);
                         $cl = $this->handleWiths($cl);
 
-                        if ($this->hasTrait(HasFilterManager::class)) {
+                        if ($this->hasTrait($cl, HasFilterManager::class)) {
                             $cl->setFilterManager($this->filter);
                         }
                         return $cl;
