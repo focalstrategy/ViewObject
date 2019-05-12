@@ -86,6 +86,11 @@ abstract class ViewObject implements Fillable, JsonSerializable, ArrayAccess
         return isset($this->data[$offset]) ? $this->data[$offset] : null;
     }
 
+    public function __toString()
+    {
+        return json_encode($this->data);
+    }
+
     public static function getFactory()
     {
         if (property_exists(get_called_class(), 'factory')) {
